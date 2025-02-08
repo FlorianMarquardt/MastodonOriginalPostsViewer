@@ -144,6 +144,9 @@ TEMPLATE = """
     </style>
 </head>
 <body>
+    {% if message %}
+    <h1>{{ message }}</h1>
+    {% else %}
     <h1>Mastodon Original Posts Viewer</h1>
     Created using Claude 3.5, guided by Florian Marquardt. Shows original posts (no boosts, no replies) of the last 90 days (max 50).
     <div class="search-form">
@@ -153,7 +156,8 @@ TEMPLATE = """
             <button type="submit">View Posts</button>
         </form>
     </div>
-    
+    {% endif %}
+
     {% if error %}
     <div class="error">{{ error }}</div>
     {% endif %}
@@ -201,6 +205,8 @@ TEMPLATE = """
 def index():
     account = request.args.get('account', '')
     hashtag = request.args.get('hashtag', '')
+    message = request.args.get('message', '')
+
     if not account:
         return render_template_string(TEMPLATE, account='', hashtag='', posts=None, error=None)
     
@@ -215,13 +221,14 @@ def index():
         try:
             fetcher = MastodonFetcher(instance_url, access_token)
             posts = fetcher.fetch_original_posts(account, hashtag=hashtag)
-            return render_template_string(TEMPLATE, account=account, hashtag=hashtag, posts=posts, error=None)
+            return render_template_string(TEMPLATE, account=account, hashtag=hashtag, posts=posts, error=None, message=message)
         except Exception as api_error:
             print(f"Mastodon API error: {str(api_error)}")  # This will go to the error log
             return render_template_string(TEMPLATE, 
                 account=account, 
                 hashtag=hashtag, 
-                posts=None, 
+                posts=None,
+                message=message,
                 error=f"Mastodon API error: {str(api_error)} (Instance URL: {instance_url})")
             
     except Exception as e:
