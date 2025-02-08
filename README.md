@@ -35,3 +35,10 @@ Finally run the program
 
 This will start a local webserver, which you can access, e.g. via
 ```http://127.0.0.1:5000``` (or the address displayed on startup).
+
+Note: If you call the url as in 
+
+```http://127.0.0.1:5000/?account=%40FMarquardtGroup%40fediscience.org&hashtag=&message=Florian%27s%20Blog```
+
+then everything will be displayed with the message text on top and no further input field for the user. This may be handy sometimes.
+
