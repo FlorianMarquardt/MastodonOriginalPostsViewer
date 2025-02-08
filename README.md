@@ -1,4 +1,4 @@
-<h1>Python Script (Flask) to Display Mastodon Original Posts</h1>
+<h1>Python Script to Display Mastodon Original Posts</h1>
 
 A little web app to display only original posts (no boosts, no replies).
 
@@ -6,7 +6,7 @@ A little web app to display only original posts (no boosts, no replies).
 
 Coded by Claude 3.5 Sonnet, guided by F.M.
 
-You can deploy this locally or on a platform like PythonAnywhere (for everyone to use).
+You can deploy this locally or possibly on a platform like PythonAnywhere (for everyone to use).
 
 Locally, just install the dependencies
 
