@@ -1,4 +1,4 @@
-== Python Script (Flask) to Display Mastodon Original Posts ==
+*** Python Script (Flask) to Display Mastodon Original Posts ***
 
 A little web app to display only original posts (no boosts, no replies).
 
