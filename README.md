@@ -2,6 +2,8 @@
 
 A little web app to display only original posts (no boosts, no replies).
 
+<img src="MastodonViewer.jpg">
+
 Coded by Claude 3.5 Sonnet, guided by F.M.
 
 You can deploy this locally or on a platform like PythonAnywhere (for everyone to use).
