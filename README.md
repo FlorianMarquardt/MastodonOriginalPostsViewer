@@ -19,6 +19,14 @@ MASTODON_INSTANCE_URL=https://your.instance.url
 MASTODON_ACCESS_TOKEN=your_access_token
 ```
 
+The instance is your home-instance, e.g. mastodon.social. The access token can be obtained by following these instructions:
+
+Go to your Mastodon instance's settings, Navigate to Development, Create a new application.
+When creating your application, give it some (arbitrary) name. Besides that, you only need to select: read:statuses - This allows reading public posts, 
+read:accounts - This allows looking up account information. Leave everything else in the form as is, then 'submit' to get the application. Afterwards, click on the 'Application' you created, which gives you several items, among them the Access Token. You only need the Access Token for this script.
+
+
+
 Finally run the program
 
 ```python showmas.py```
