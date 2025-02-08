@@ -8,7 +8,9 @@ You can deploy this locally or on a platform like PythonAnywhere (for everyone t
 
 Locally, just install the dependencies
 
+```
 pip install flask mastodon.py python-dotenv
+```
 
 Then create a file ```mastodon.env``` with the following content:
 
