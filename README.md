@@ -44,3 +44,5 @@ Note: If you call the url as in
 
 then everything will be displayed with the message text on top and no further input field for the user. This may be handy sometimes.
 
+Note: If you want to host this on the free PythonAnywhere account, you need to have a mastodon.social account (where you create your token), because only that instance is on their 'allowlist'. Otherwise, with a paid account, you can go through any instance.
+
