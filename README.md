@@ -16,13 +16,13 @@ Blog-type display: https://florianmarquardtmastodon.eu.pythonanywhere.com/?accou
 
 You can deploy this locally or possibly on a platform like PythonAnywhere (for everyone to use).
 
-Locally, just install the dependencies
+Locally, just download the showmas.py into some directory and install the dependencies
 
 ```
 pip install flask mastodon.py python-dotenv
 ```
 
-Then create a file ```mastodon.env``` with the following content:
+Then create a file ```mastodon.env``` inside the same directory, with the following content:
 
 ```
 MASTODON_INSTANCE_URL=https://your.instance.url
