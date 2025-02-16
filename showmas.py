@@ -124,6 +124,14 @@ TEMPLATE = """
         }
         .post-content {
             margin-bottom: 15px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: normal;
+            hyphens: none;
+        }
+        .post-content a {
+            max-width: 100%;
+            display: inline-block;
         }
         .media-attachments img {
             max-width: 100%;
@@ -134,6 +142,18 @@ TEMPLATE = """
         .hashtags {
             margin-top: 15px;
             color: #1976d2;
+        }
+        .post-link {
+            margin-top: 15px;
+            text-align: right;
+        }
+        .post-link a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .post-link a:hover {
+            text-decoration: underline;
         }
         .error {
             color: red;
@@ -193,6 +213,9 @@ TEMPLATE = """
                 {% endfor %}
             </div>
             {% endif %}
+            <div class="post-link">
+                <a href="{{ post.url }}" target="_blank">View original post</a>
+            </div>
         </div>
         {% endfor %}
     </div>
