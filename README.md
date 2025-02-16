@@ -6,6 +6,14 @@ A little web app to display only original posts (no boosts, no replies).
 
 Coded by Claude 3.5 Sonnet, guided by F.M.
 
+To see this in action (when running on a web server, here pythonanywhere):
+
+Generic version: https://florianmarquardtmastodon.eu.pythonanywhere.com/?account=%40FMarquardtGroup%40fediscience.org&hashtag=
+
+Blog-type display: https://florianmarquardtmastodon.eu.pythonanywhere.com/?account=%40FMarquardtGroup%40fediscience.org&hashtag=AutomatedScientificDiscovery&message=Florian%27s%20Blog:%20Automated%20Scientific%20Discovery
+
+
+
 You can deploy this locally or possibly on a platform like PythonAnywhere (for everyone to use).
 
 Locally, just install the dependencies
